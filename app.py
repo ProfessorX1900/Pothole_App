@@ -4,8 +4,6 @@ import pandas as pd
 
 st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wide")
 
-st.title("I am working!")
-
 df = pd.read_csv("sydney_suburbs.csv")
 
 st.markdown(""" <style>
