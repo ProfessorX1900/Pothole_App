@@ -25,8 +25,9 @@ markers_df = pd.DataFrame(markers_data)
 st.title('Pothole Map')
 st.write('No hole left unplugged')
 
-selected_tab = st.navbar(["Home", "Map", "Report Pothole"])
-st.write(page)
+pages = ["Home", "Map", "Report Pothole"]
+
+selected_tab = st.navbar(pages)
 
 if selected_tab == "Home":
     st.markdown("""
