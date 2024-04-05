@@ -19,12 +19,6 @@ styles = {
         "color": "white",
         "padding": "14px",
     },
-    "active": {
-        "color": "var(--text-color)",
-        "background-color": "white",
-        "font-weight": "normal",
-        "padding": "14px",
-    }
 }
 
 # CSS styles for the navigation bar and content
