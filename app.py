@@ -1,7 +1,7 @@
 import streamlit as st
 import pydeck as pdk
 import pandas as pd
-import streamlit_navigation as st_navbar
+from streamlit_navigation import st.navbar
 
 st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wide")
 
