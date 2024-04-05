@@ -16,6 +16,12 @@ footer {visibility: hidden;}
     width: 100%;
     z-index: 999;
     background-color: white; /* Add background color as needed */
+    transition: top 0.3s; /* Add smooth transition */
+}
+
+/* Hide navbar when scrolling down */
+.navbar-container.hidden {
+    top: -100px; /* Adjust as needed */
 }
 </style> """, unsafe_allow_html=True)
 
