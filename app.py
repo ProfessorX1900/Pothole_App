@@ -10,6 +10,13 @@ df = pd.read_csv("sydney_suburbs.csv")
 st.markdown(""" <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white; /* Add background color as needed */
+}
 </style> """, unsafe_allow_html=True)
 
 # Predefined markers for future integration with detection model
