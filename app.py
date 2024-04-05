@@ -11,7 +11,6 @@ st.markdown(""" <style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 .navbar-container {
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 999;
@@ -24,6 +23,7 @@ footer {visibility: hidden;}
     top: -100px; /* Adjust as needed */
 }
 </style> """, unsafe_allow_html=True)
+
 
 # Predefined markers for future integration with detection model
 markers_data = [
