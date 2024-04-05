@@ -7,7 +7,9 @@ st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wid
 
 df = pd.read_csv("sydney_suburbs.csv")
 
-st.markdown(""" <style>
+# CSS styles for the navigation bar and content
+st.markdown("""
+<style>
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 .navbar-container {
@@ -22,7 +24,13 @@ footer {visibility: hidden;}
 .navbar-container.hidden {
     top: -100px; /* Adjust as needed */
 }
-</style> """, unsafe_allow_html=True)
+
+/* Add margin to content below the navbar */
+.content {
+    margin-top: 80px; /* Adjust as needed */
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 # Predefined markers for future integration with detection model
