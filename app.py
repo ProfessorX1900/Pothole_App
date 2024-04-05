@@ -3,7 +3,7 @@ import pydeck as pdk
 import pandas as pd
 from streamlit_navigation_bar import st_navbar
 
-st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wide")
+st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wide", initial_sidebar_state="collapsed")
 
 df = pd.read_csv("sydney_suburbs.csv")
 
