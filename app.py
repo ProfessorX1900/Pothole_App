@@ -1,7 +1,7 @@
 import streamlit as st
 import pydeck as pdk
 import pandas as pd
-from streamlit_navigation import st.navbar
+from streamlit_navigation import st_navbar
 
 st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wide")
 
@@ -27,7 +27,7 @@ st.write('No hole left unplugged')
 
 pages = ["Home", "Map", "Report Pothole"]
 
-selected_tab = st.navbar(pages)
+selected_tab = st_navbar(pages)
 
 if selected_tab == "Home":
     st.markdown("""
