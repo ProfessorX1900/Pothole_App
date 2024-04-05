@@ -7,6 +7,26 @@ st.set_page_config(page_title='Pothole Detection', page_icon="🚧", layout="wid
 
 df = pd.read_csv("sydney_suburbs.csv")
 
+styles = {
+    "nav": {
+        "background-color": "royalblue",
+        "justify-content": "left",
+    },
+    "img": {
+        "padding-right": "14px",
+    },
+    "span": {
+        "color": "white",
+        "padding": "14px",
+    },
+    "active": {
+        "color": "var(--text-color)",
+        "background-color": "white",
+        "font-weight": "normal",
+        "padding": "14px",
+    }
+}
+
 # CSS styles for the navigation bar and content
 st.markdown("""
 <style>
@@ -18,16 +38,6 @@ footer {visibility: hidden;}
     z-index: 999;
     background-color: white; /* Add background color as needed */
     transition: top 0.3s; /* Add smooth transition */
-}
-
-/* Hide navbar when scrolling down */
-.navbar-container.hidden {
-    top: -100px; /* Adjust as needed */
-}
-
-/* Add margin to content below the navbar */
-.content {
-    margin-top: 80px; /* Adjust as needed */
 }
 </style>
 """, unsafe_allow_html=True)
@@ -48,7 +58,7 @@ st.write('No hole left unplugged')
 
 pages = ["Home", "Map", "Report Pothole"]
 
-selected_tab = st_navbar(pages)
+selected_tab = st_navbar(pages, styles=styles, options=False)
 
 if selected_tab == "Home":
     st.markdown("""
