@@ -9,7 +9,7 @@ df = pd.read_csv("sydney_suburbs.csv")
 
 styles = {
     "nav": {
-        "background-color": "white",
+        "background-color": "navyblue",
         "justify-content": "left",
     },
     "img": {
